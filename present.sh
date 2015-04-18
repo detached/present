@@ -25,7 +25,7 @@ pandoc -i -s --template=$TEMPLATE -t revealjs --variable theme="$THEME" --variab
 
 if [ $? -eq 0 ]; then
     echo "=> Open in Browser"
-    xdg-open slides.html
+    xdg-open $MD.html
 else 
     exit 1
 fi
